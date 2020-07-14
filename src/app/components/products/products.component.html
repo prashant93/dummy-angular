@@ -1,6 +1,6 @@
 <div class="row">
     <input type="search" class="search form-control" [(ngModel)]="queryString" placeholder="Search By Title">
-    <div class="col-4" style=" padding-top:20px;" *ngFor="let item of productList | filterdata: queryString : 'title'; let i = index">
+    <div class="col-4" style=" padding-top:56px;" *ngFor="let item of productList | filterdata: queryString : 'title'; let i = index">
         <h4>
             {{item.title}}
         </h4>

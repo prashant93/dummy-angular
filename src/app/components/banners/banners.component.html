@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-12 py-3">
+        <ngb-carousel *ngIf="slides">
+            <ng-template ngbSlide *ngFor="let image of slides">
+                <img class="img-fluid" [src]="image.url" alt="Random slide">
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>

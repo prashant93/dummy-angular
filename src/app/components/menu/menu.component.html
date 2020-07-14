@@ -1,0 +1,16 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-3">
+    <a class="navbar-brand" [routerLink]="'/home'">Order Mart</a>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse ">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="'/home'" (click)="isMenuCollapsed = true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="'/products'" (click)="isMenuCollapsed = true">Products</a>
+            </li>
+        </ul>
+    </div>
+</nav>

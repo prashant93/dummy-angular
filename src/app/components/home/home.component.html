@@ -1,0 +1,18 @@
+<app-banner [slides]="slides"></app-banner>
+
+<h3>Upcoming Products</h3>
+<div class="row">
+    <div class="col-4" *ngFor="let item of productList">
+        <h4>
+            {{item.title}}
+        </h4>
+        <img class="img-thumbnail" [src]="item.img" alt="Random slide">
+        <p>
+            {{item.date}}
+            <small> {{item.txt}}</small>
+        </p>
+
+
+
+    </div>
+</div>

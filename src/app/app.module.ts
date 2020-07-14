@@ -1,12 +1,10 @@
 import { BannerComponent } from './components/banners/banners.component';
 import { HomeComponent } from './components/home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterdataPipe } from './shared/pipes/filter/filterdata.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { MaterialModule } from './shared/module/material/material.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -26,10 +24,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    MaterialModule,
     NgbCarouselModule,
     NgbNavModule,
     NgbCollapseModule,
